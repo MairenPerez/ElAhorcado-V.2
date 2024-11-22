@@ -15,6 +15,8 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            min-height: 100vh;
+            position: relative;
         }
 
         h1 {
@@ -30,15 +32,13 @@
 
         .game-container {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            padding: 20px;
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 45px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            width: 90%;
-            max-width: 600px;
-            position:center;
-        }
-
+            width: 100%;
+            max-width:auto;
+}
         svg {
             display: block;
             margin: 0 auto;
@@ -173,7 +173,7 @@
 
         <div class="row">
            <div class="col">
-               <asp:Button ID="Button1" runat="server" Text="Jugar" CssClass="btn-primary"/>
+<%--               <asp:Button ID="Button1" runat="server" Text="Jugar" CssClass="btn-primary"/>--%>
            </div>
         </div>
 
@@ -305,7 +305,6 @@
          window.addEventListener('keydown', handleKeyPress);
 
          // Iniciamos el juego
-         setupKeyboard();
          displayWord();
      </script>
 </asp:Content>
